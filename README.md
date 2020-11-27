@@ -1,5 +1,14 @@
 # blb-consumer-frontend
 
+在线预览：<https://blb.ismy.wang>
+
+## 部分截图
+
+![](./snapshots/1.png)
+![](./snapshots/2.png)
+![](./snapshots/3.png)
+![](./snapshots/4.png)
+
 ## 页面
 
 - [ ] 公共组件
