@@ -1,6 +1,20 @@
 # blb-consumer-frontend
 
+来源于:<https://github.com/0xcaffebabe/blb> 微服务后端项目
+
+消费者前端越做越大 于是干脆就把消费者前端独立出来 成为一个独立的项目
+
 在线预览：<https://blb.ismy.wang>
+
+## 使用
+
+```sh
+npm install # 安装依赖
+npm run mock # 启动mock服务器
+npm run dev # 启动web服务器
+```
+
+访问localhost:8080即可
 
 ## 部分截图
 
