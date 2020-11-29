@@ -29,15 +29,15 @@ export default {
       msg: '',
       list: [
         {
-          date: new Date().toISOString(),
+          date: new Date().toLocaleDateString() + new Date().toLocaleTimeString(),
           text: { text: '您好, 欢迎光临黄焖鸡米饭' },
           mine: false,
           name: '黄焖鸡米饭',
-          img: 'https://zbq.ismy.wang/img/anonymous.jpg'
+          img: '/imgs/shop_logos/kafei.jpg'
         }
       ],
       config: {
-        img: 'https://zbq.ismy.wang/img/anonymous.jpg',
+        img: '/imgs/shop_logos/kafei.jpg',
         name: '黄焖鸡米饭',
         dept: '为生活增添点快乐',
         callback: this.headerEvent
@@ -47,16 +47,16 @@ export default {
         tip: '店铺公告',
         list: [
           {
-            name: '盼盼',
-            img: 'https://pic1.zhimg.com/v2-89b980f785a7d9dd1068fb9d171ed6cd_is.jpg'
+            name: '黄焖鸡米饭①号客服',
+            img: '/imgs/shop_logos/kafei.jpg'
           },
           {
-            name: '坤坤',
-            img: 'https://pic1.zhimg.com/v2-89b980f785a7d9dd1068fb9d171ed6cd_is.jpg'
+            name: '黄焖鸡米饭②号客服',
+            img: '/imgs/shop_logos/kafei.jpg'
           },
           {
-            name: '丽丽',
-            img: 'https://pic1.zhimg.com/v2-89b980f785a7d9dd1068fb9d171ed6cd_is.jpg'
+            name: '黄焖鸡米饭③号客服',
+            img: '/imgs/shop_logos/kafei.jpg'
           }
         ]
       }
@@ -70,7 +70,7 @@ export default {
     },
     handleEnter () {
       this.list.push({
-        date: new Date().toISOString(),
+        date: new Date().toLocaleDateString() + new Date().toLocaleTimeString(),
         img: this.$store.state.user.info.avatar,
         name: this.$store.state.user.info.username,
         mine: true,
