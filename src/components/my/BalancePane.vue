@@ -9,7 +9,7 @@
     <el-popconfirm
       confirmButtonText='好的'
       cancelButtonText='不用了'
-      @onConfirm="withdraw"
+      @confirm="withdraw"
       icon="el-icon-info"
       iconColor="rgb(102,177,255)"
       title="确认进行提现吗？"
