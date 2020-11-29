@@ -4,15 +4,30 @@
     <!-- 菜单选项栏 -->
     <el-card style="margin-top:50px">
         <el-tabs v-model="activeName">
-          <el-tab-pane label="商品" name="product">
+          <el-tab-pane label="点餐" name="product">
             <shop-product :shopId="shopId"/>
           </el-tab-pane>
           <el-tab-pane label="评价" name="eval">
             <shop-eval :shopId="shopId"/>
           </el-tab-pane>
-          <el-tab-pane label="商家" name="third">
-            <p>店主：{{shopInfo.sellerName}}</p>
-            <p>联系电话：{{shopInfo.shopPhone}}</p>
+          <el-tab-pane label="商家" name="seller">
+            <el-card>
+              <div slot="header">
+                <el-tag>食无忧</el-tag> 该商户已经购买食品安全责任险，食品安全有保障
+                <el-button type="danger" size="medium" style="float:right">举报商家</el-button>
+              </div>
+              <p>商家品类：黄焖鸡 / 盖浇饭</p>
+              <p>营业时间：周一至周日 10:00 - 22:00</p>
+              <p>店主：{{shopInfo.sellerName}}</p>
+              <ul class="shop-inner-list">
+                <li>
+                  <el-image src="/imgs/shop_inner/1.jpg" :preview-src-list="['/imgs/shop_inner/1.jpg']" fit="cover" style="height:144px;width:144px"></el-image>
+                </li>
+                <li>
+                  <el-image src="/imgs/shop_inner/2.png" :preview-src-list="['/imgs/shop_inner/2.png']" fit="cover" style="height:144px;width:144px"></el-image>
+                </li>
+              </ul>
+            </el-card>
           </el-tab-pane>
         </el-tabs>
     </el-card>
@@ -136,6 +151,12 @@ export default {
       margin-left: 0;
       border-radius: 0;
       border-bottom-left-radius: 5px;
+    }
+  }
+  .shop-inner-list {
+    li {
+      display: inline;
+      margin-right: 10px;
     }
   }
 </style>
