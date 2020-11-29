@@ -64,21 +64,21 @@ export default {
       msg: '',
       list: [
         {
-          date: new Date().toISOString(),
+          date: new Date().toLocaleDateString() + new Date().toLocaleTimeString(),
           text: { text: '您好, 请问有什么可以帮助您' },
           mine: false,
           name: '饱了吧智能客服',
           img: 'https://zbq.ismy.wang/img/helper.jpg'
         },
         {
-          date: new Date().toISOString(),
+          date: new Date().toLocaleDateString() + new Date().toLocaleTimeString(),
           text: { text: '人工客服繁忙, 您的前面仍有 <span style="color:skyblue">208</span> 位用户' },
           mine: false,
           name: '饱了吧智能客服',
           img: 'https://zbq.ismy.wang/img/helper.jpg'
         },
         {
-          date: new Date().toISOString(),
+          date: new Date().toLocaleDateString() + new Date().toLocaleTimeString(),
           text: { text: '您可以选择自助服务： <ul><li><a href="#" style="color:skyblue">会员充值没有到账?</a></li><li><a href="#" style="color:skyblue">如何进行投诉?</a></li></ul>或者继续等待' },
           mine: false,
           name: '饱了吧智能客服',
@@ -97,15 +97,15 @@ export default {
         list: [
           {
             name: '盼盼',
-            img: 'https://pic1.zhimg.com/v2-89b980f785a7d9dd1068fb9d171ed6cd_is.jpg'
+            img: 'https://zbq.ismy.wang/img/helper.jpg'
           },
           {
             name: '坤坤',
-            img: 'https://pic1.zhimg.com/v2-89b980f785a7d9dd1068fb9d171ed6cd_is.jpg'
+            img: 'https://zbq.ismy.wang/img/helper.jpg'
           },
           {
             name: '丽丽',
-            img: 'https://pic1.zhimg.com/v2-89b980f785a7d9dd1068fb9d171ed6cd_is.jpg'
+            img: 'https://zbq.ismy.wang/img/helper.jpg'
           }
         ]
       }
@@ -114,7 +114,7 @@ export default {
   methods: {
     handleEnter () {
       this.list.push({
-        date: new Date().toISOString(),
+        date: new Date().toLocaleDateString() + new Date().toLocaleTimeString(),
         img: this.$store.state.user.info.avatar,
         name: this.$store.state.user.info.username,
         mine: true,
