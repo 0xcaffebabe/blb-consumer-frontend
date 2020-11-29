@@ -1,7 +1,6 @@
 <template>
   <el-row :gutter='20'>
     <el-col :span='18'>
-      <el-card>
         <el-tag class="eval-tag" type='primary' :effect='currentEval == -1 ?"dark":"light"' @click="handleTagClick(-1)">全部评价({{allEvalSum}})</el-tag>
         <el-tag class="eval-tag"
         v-for='item in shopEval.wordCloud'
@@ -47,7 +46,6 @@
           layout="prev, pager, next"
           :total="evalTotal">
         </el-pagination>
-      </el-card>
     </el-col>
     <el-col :span='6'>
       <el-card class='eval-info'>
