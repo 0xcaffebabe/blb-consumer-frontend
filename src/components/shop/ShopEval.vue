@@ -37,13 +37,14 @@
           </li>
         </ul>
         <el-pagination
+          style="text-align:center"
           @size-change="handleSizeChanged"
           background
           @current-change="handlePageChanged"
           :current-page="evalPage"
           :page-sizes="[2, 10, 20, 30]"
           :page-size="evalPageSize"
-          layout="total, sizes, prev, pager, next, jumper"
+          layout="prev, pager, next"
           :total="evalTotal">
         </el-pagination>
       </el-card>
