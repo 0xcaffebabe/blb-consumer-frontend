@@ -6,6 +6,10 @@ class StorageService {
   putItem (key, val) {
     window.localStorage.setItem(key, val)
   }
+
+  remove (key) {
+    window.localStorage.removeItem(key)
+  }
 }
 
 export default new StorageService()

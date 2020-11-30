@@ -33,6 +33,9 @@ export default new Vuex.Store({
       this.state.confirmOrderData.shopInfo = data.shopInfo
       this.state.confirmOrderData.productList = data.productList
     },
+    setUserLoginStatus (state, isLogin) {
+      this.state.user.login = isLogin
+    },
     toggleCart () {
       this.state.cartShow = !this.state.cartShow
     },

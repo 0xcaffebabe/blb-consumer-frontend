@@ -32,8 +32,8 @@
                 <p>蔡徐坤</p>
                 <p>您有 <a href="#">1</a> 条新消息</p>
                 <div>
-                  <el-button type="primary" size="mini">切换账号</el-button>
-                  <el-button type="warning" size="mini">注销</el-button>
+                  <el-button type="primary" size="mini" @click="changeAccount">切换账号</el-button>
+                  <el-button type="warning" size="mini" @click="handleLogout">注销</el-button>
                 </div>
               </div>
               <el-avatar :src="$store.state.user.info.avatar" class="avatar" slot="reference"></el-avatar>
@@ -61,6 +61,17 @@ export default {
     if (isLogin) {
       const userInfo = await consumerService.getConsumerInfo()
       this.$store.commit('setUserInfo', userInfo)
+    }
+  },
+  methods: {
+    handleLogout () {
+      consumerService.logout()
+      this.$store.commit('setUserLoginStatus', false)
+      this.$message.success('注销成功')
+    },
+    changeAccount () {
+      this.handleLogout()
+      this.$store.commit('toggleLoginPanel')
     }
   },
   components: {

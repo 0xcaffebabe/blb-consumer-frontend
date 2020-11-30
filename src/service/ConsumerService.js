@@ -51,6 +51,11 @@ class ConsumerService {
     return data.data
   }
 
+  // 注销
+  logout () {
+    storageService.remove('token')
+  }
+
   async uploadAvatar (fileList) {
     if (!fileList || fileList.length === 0) {
       throw new Error('上传头像失败:没有选择图片')
