@@ -2,7 +2,7 @@
   <el-dialog
     title="编辑资料"
     :visible="$store.state.userEditPanelShow"
-    width="50%"
+    width="30%"
     @close="$store.commit('toggleUserEditPanel')"
     >
     <el-tabs v-model="currentTab">
