@@ -2,7 +2,7 @@
   <el-dialog
     title="订单评价"
     :visible="$store.state.evalPaneShow"
-    width="35%"
+    width="30%"
     @close="$store.commit('closeEvalPaneShow')"
     >
     <el-row>
