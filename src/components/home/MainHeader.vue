@@ -1,9 +1,10 @@
 <template>
     <div class="container">
         <el-row>
-        <el-col :span="4">
+        <el-col :span="4" class="logo-wrapper">
           <span class="logo">饱了吧
           </span>
+          <img src="/imgs/logo.png" alt="" style="width:40px;height:40px"/>
         </el-col>
         <el-col :span="16">
           <el-menu :default-active="'takeaway'"
@@ -82,6 +83,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
+  .logo-wrapper {
+    padding-left: 40px;
+  }
   .login-tip {
     font-size:14px;
     color:white;
