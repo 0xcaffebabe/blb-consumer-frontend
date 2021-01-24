@@ -3,7 +3,7 @@
     :title="activeName == 'login' ? '登录' : '注册'"
     :visible="$store.state.loginPanelShow"
     @close="$store.commit('closeLoginPanel')"
-    width="40%">
+    width="25%">
       <el-tabs v-model="activeName">
         <el-tab-pane label="登录" name="login">
           <el-form :model="loginForm" :rules="loginFormRules" ref="loginForm" :label-position="'right'" label-width="80px">
