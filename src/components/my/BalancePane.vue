@@ -2,7 +2,7 @@
   <el-dialog
     title="账户余额"
     :visible="$store.state.balancePaneShow"
-    width="30%"
+    width="20%"
     @close="$store.commit('closeBalancePane')"
     >
     <el-button type="success" style="float:right;margin-left:10px" @click="showRecharge = !showRecharge">充值</el-button>
