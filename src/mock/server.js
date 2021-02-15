@@ -200,7 +200,7 @@ const productMetadata = [
 // 获取商品列表
 app.get('/shop/:id/:categoryId/product', (req, res) => {
   const specMetadata = [
-    { specName: '大份' }, { specName: '小份'}, {specName: '中份'}
+    { specName: '大份' }, { specName: '小份'}, {specName: '中份'}, { specName: '特大份'}, {specName: '迷你份'} , {specName: '巨无霸份'}
   ]
   const n = randomInt(5) + 5
   const productList = []
@@ -217,6 +217,9 @@ app.get('/shop/:id/:categoryId/product', (req, res) => {
       spec.packageFee = randomInt(2) + 3
       spec.price = randomInt(20) + 5
       spec.stock = randomInt(100) + 1
+      if (product.productSpecList.some(i => i.specName === spec.specName)) {
+        continue;
+      }
       product.productSpecList.push(spec)
     }
     productList.push(product)
