@@ -25,11 +25,11 @@
           </el-col>
         </el-row>
         <div v-if="getOrderStatus(order) === '配送中' && editable" class="amap-box-wrapper">
-          <el-amap class="amap-box" :zoom="10" :center="[117.5,24]" >
-            <el-amap-marker vid="component-shop-marker" :position="[117.5,24]"></el-amap-marker>
-            <el-amap-text vid="component-shop-text" :position="[117.5,24]" :text="'店铺位置'"></el-amap-text>
-            <el-amap-marker vid="component-rider-marker" :position="[117.5,24.1]"></el-amap-marker>
-            <el-amap-text vid="component-rider-text" :position="[117.5,24.1]" :text="'骑手位置'"></el-amap-text>
+          <el-amap class="amap-box" :zoom="20" :center="[118.636466,24.873600]" >
+            <el-amap-marker vid="component-shop-marker" :position="[118.637466,24.873400]"></el-amap-marker>
+            <el-amap-text vid="component-shop-text" :position="[118.637466,24.873400]" :text="'店铺'"></el-amap-text>
+            <el-amap-marker vid="component-rider-marker" :position="[118.637066,24.873700]"></el-amap-marker>
+            <el-amap-text vid="component-rider-text" :position="[118.637066,24.873700]" :text="'骑手'"></el-amap-text>
           </el-amap>
         </div>
         <el-button v-if="getOrderStatus(order) === '已完结' && editable" @click="showOrderEval" size="mini" type="warning" style="float:right;margin-top:5px;margin-left:15px">评价订单</el-button>
