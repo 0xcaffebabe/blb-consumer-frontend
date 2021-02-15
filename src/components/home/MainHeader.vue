@@ -14,7 +14,7 @@
                     active-text-color="#ffd04b"
                     :router="true"
                     >
-            <el-menu-item index="/takeaway" class="el-icon-eleme"> 外卖</el-menu-item>
+            <el-menu-item index="/takeaway" class="el-icon-dish"> 外卖</el-menu-item>
             <el-menu-item index="/search" class="el-icon-search"> 搜索</el-menu-item>
             <el-menu-item index="/order" class="el-icon-s-order" :disabled="!$store.state.user.login"> 订单</el-menu-item>
             <el-menu-item index="/my" class="el-icon-user" :disabled="!$store.state.user.login"> 我的</el-menu-item>

@@ -22,7 +22,7 @@
               <el-link>{{item}}</el-link>
             </li>
           </ul>
-          <p class="copyright">Copyright © 2020 blb.ismy.wang All Rights Reserved | 闽ICP备17018216号 </p>
+          <p class="copyright">Copyright © 2021 blb.ismy.wang All Rights Reserved | 闽ICP备17018216号 </p>
     </el-footer>
   </el-container>
 </template>
@@ -79,7 +79,7 @@ export default {
       padding: 0;
       margin: 0;
       font-size: 14px;
-      color: #ccc;
+      color: #ddd;
     }
     .el-link {
       color: #eee;

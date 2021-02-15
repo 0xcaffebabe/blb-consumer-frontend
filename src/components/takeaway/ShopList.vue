@@ -157,7 +157,6 @@ export default {
       border-bottom: none;
       cursor: pointer;
       .shop-logo{
-        box-shadow: 2px 2px 13px #bbb;
         img {
           width: 110%;
           height: 110%;

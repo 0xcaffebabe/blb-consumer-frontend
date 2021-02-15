@@ -3,7 +3,7 @@
     <el-row :gutter="20">
       <el-col :span="6">
         <div class="product-img-wrapper">
-          <el-image :src="product.productImg" :preview-src-list="['./food.png']" fit="cover" style="width:100%;height:100%"></el-image>
+          <el-image :src="product.productImg" :preview-src-list="[product.productImg]" fit="cover" style="width:100%;height:100%"></el-image>
         </div>
       </el-col>
       <el-col :span="12">
