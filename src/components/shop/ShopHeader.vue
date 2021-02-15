@@ -7,15 +7,14 @@
             class="shop-logo"
             style="width: 400px; height: 200px"
             :src="info.shopLogo"
-            :preview-src-list="[info.shopLogo]"
+            :preview-src-list="imgList"
             fit="cover"/>
             <ul class="img-list">
-              <li v-for="(item,index) in 4" :key="item + '1'">
+              <li v-for="item in imgList.slice(1,5)" :key="item">
                 <el-image
                 class="shop-logo"
-                :class="{'img-active': imgActive == index}"
-                @click="handleImgClick(index, $event)"
-                :src="info.shopLogo"
+                :src="item"
+                :preview-src-list="imgList"
                 fit="cover"/>
               </li>
             </ul>
@@ -53,7 +52,13 @@ export default {
   data () {
     return {
       rate: 3.7,
-      imgActive: 0
+      imgActive: 0,
+      imgList: [
+        'imgs/foods/huangmenji.jpg',
+        'imgs/foods/huangmenfuzhu.jpg',
+        'imgs/foods/huangmenzhujiao.jpg',
+        'imgs/foods/huangmenpaigu.jpg'
+      ]
     }
   },
   methods: {
@@ -61,6 +66,9 @@ export default {
       this.imgActive = index
       e.preventDefault()
     }
+  },
+  created () {
+    this.imgList.unshift(this.info.shopLogo)
   }
 }
 </script>
@@ -110,7 +118,7 @@ export default {
     }
   }
   .img-active {
-    border: 3px solid rgb(49,144,232);
+    border: 2px solid rgb(49,144,232);
     transition: all 0.2s;
   }
 </style>
