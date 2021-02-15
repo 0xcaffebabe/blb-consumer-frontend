@@ -73,11 +73,11 @@ const clone = origin => {
 
 const shopMetadata = [
   {shopLogo: '/imgs/shop_logos/mixilan.jpg', shopName: '米兰西饼生日蛋糕'},
-  {shopLogo: '/imgs/shop_logos/yingyuan.jpg', shopName: 'e+咖啡私人影院'},
-  {shopLogo: '/imgs/shop_logos/xiang.jpg', shopName: '57°C湘'},
-  {shopLogo: '/imgs/shop_logos/huoguo.jpg', shopName: '火锅咖·自选火锅'},
-  {shopLogo: '/imgs/shop_logos/kafei.jpg', shopName: '元品咖啡'},
-  {shopLogo: '/imgs/shop_logos/hani.jpg', shopName: '哈尼小站'},
+  {shopLogo: '/imgs/shop_logos/jiaolezhiji.jpg', shopName: '叫了只炸鸡'},
+  {shopLogo: '/imgs/shop_logos/kendeji.png', shopName: '肯德基'},
+  {shopLogo: '/imgs/shop_logos/haidilao.png', shopName: '海底捞火锅'},
+  {shopLogo: '/imgs/shop_logos/ruixing.jpg', shopName: '瑞幸咖啡'},
+  {shopLogo: '/imgs/shop_logos/guming.png', shopName: '古茗奶茶'},
   {shopLogo: '/imgs/shop_logos/dekeshi.jpg', shopName: '德克士'},
 ]
 
@@ -194,7 +194,7 @@ const productMetadata = [
   { productName: '黄焖鸭米饭', productImg: '/imgs/foods/huangmenya.jpg', productDesc: '香香甜甜的黄焖鸭米饭'},
   { productName: '豪大大鸡排', productImg: '/imgs/foods/jipai.jpg', productDesc: '香喷喷的豪大大鸡排'},
   { productName: '黄焖腐竹升级版', productImg: '/imgs/foods/huangmenfuzhu.jpg', productDesc: '升级版黄焖腐竹'},
-  { productName: '黄焖排骨', productImg: '/imgs/foods/huangmenpaigu.jpeg', productDesc: '香香甜甜的黄焖排骨'},
+  { productName: '黄焖排骨', productImg: '/imgs/foods/huangmenpaigu.jpg', productDesc: '香香甜甜的黄焖排骨'},
 ]
 
 // 获取商品列表
