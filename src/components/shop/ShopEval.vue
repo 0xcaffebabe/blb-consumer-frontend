@@ -25,7 +25,7 @@
                   <li v-for="img in item.imgList" :key="img + Math.random()">
                     <el-image
                     :src="img"
-                    :preview-src-list="[img]"
+                    :preview-src-list="item.imgList"
                     fit="cover"
                     />
                   </li>
