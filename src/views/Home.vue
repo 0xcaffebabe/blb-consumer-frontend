@@ -57,7 +57,7 @@ export default {
   }
   .main {
     width: 1280px;
-    min-height: 880px;
+    min-height: 1080px;
     margin: auto;
   }
   .footer {
