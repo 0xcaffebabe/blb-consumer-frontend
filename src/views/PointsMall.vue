@@ -24,7 +24,7 @@
       <el-col :span="8" class="mall-right">
         <el-row :gutter="20" class="my-info">
           <el-col :span="6">
-            <el-avatar src="https://img.mukewang.com/5b76b51000014f3607500562-100-100.jpg" style="width:64px;height:64px">user</el-avatar>
+            <el-avatar src="imgs/avatar.jpg" style="width:64px;height:64px">user</el-avatar>
           </el-col>
           <el-col :span="18">
             <h3>CAFEBABE</h3>
@@ -64,17 +64,17 @@ export default {
       productList: [],
       customerList: [],
       productMetadata: [
-        { name: '黑寡妇第二代RGB机械键盘', img: 'https://img3.sycdn.imooc.com/5ae18a990001c72c04180342-200-200.jpg', point: '3926' },
-        { name: '美的（Midea）扫地机器人', img: 'https://img2.sycdn.imooc.com/5ae186d7000128f403490349.jpg', point: '3245' },
-        { name: '多功能双肩包', img: 'https://img1.sycdn.imooc.com/5aded5bd00011f3a04560447.jpg', point: '595' },
-        { name: '罗技（Logitech）无线鼠标', img: 'https://img4.sycdn.imooc.com/5adecf510001e13304260407.jpg', point: '340' },
-        { name: 'Kindle Paperwhite电纸书阅读器', img: 'https://img2.sycdn.imooc.com/5adef1f20001adb604000447.jpg', point: '3790' }
+        { name: '黑寡妇第二代RGB机械键盘', img: 'imgs/award/keyboard.jpg', point: '3926' },
+        { name: '美的（Midea）扫地机器人', img: 'imgs/award/cleanrobot.jpg', point: '3245' },
+        { name: '多功能双肩包', img: 'imgs/award/bag.jpg', point: '595' },
+        { name: '罗技（Logitech）无线鼠标', img: 'imgs/award/mouse.jpg', point: '340' },
+        { name: 'Kindle Paperwhite电纸书阅读器', img: 'imgs/award/kindle.jpg', point: '3790' }
       ],
       personMetadata: [
-        { username: '谁叫我这么坏', avatar: 'https://img3.sycdn.imooc.com/5333a0c40001088802000200-100-100.jpg' },
-        { username: '我不是懂王', avatar: 'https://img2.sycdn.imooc.com/54584d7300011cfa02200220-100-100.jpg' },
-        { username: '铁拳玩家', avatar: 'https://img1.sycdn.imooc.com/54584f540001558402200220-100-100.jpg' },
-        { username: '初见', avatar: 'https://img2.sycdn.imooc.com/5a38d2f4000199fc01000100-100-100.jpg' }
+        { username: '谁叫我这么坏', avatar: 'imgs/user/1.jpg' },
+        { username: '我不是懂王', avatar: 'imgs/user/2.jpg' },
+        { username: '铁拳玩家', avatar: 'imgs/user/3.jpg' },
+        { username: '初见', avatar: 'imgs/user/4.jpg' }
       ]
     }
   },
